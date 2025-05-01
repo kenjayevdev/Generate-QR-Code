@@ -2,9 +2,17 @@ import segno
 from PIL import Image
 import random
 import os
+import platform
 
 
-os.system("cls") # clear
+def clear_screen():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+# Foydalanish:
+clear_screen()
 # color
 red    = "\033[31m"
 blue   = "\033[34m"
