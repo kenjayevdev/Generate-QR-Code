@@ -1,4 +1,4 @@
-# Generate-QR-Code
+# 🎇 Generate-QR-Code
 
 🛠The following technologies were used in this project: Python Library(segno, pillow)
 
