@@ -58,8 +58,13 @@ def create_qr():
                 data_dark='darkorange', data_light='yellow')
 
     # Open the image
-    img = Image.open(filename)
-    img.show()
+    def open_img():
+        if platform.system() == "Windows":
+            img = Image.open(filename)
+            img.show()
+        else:
+            pass
+    open_img()
     print(f"\n\033[34mQR Code '\033[32m{filename}' \033[34msaved and opened with the name.")
 
 # Main loop
